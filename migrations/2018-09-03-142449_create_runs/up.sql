@@ -1,0 +1,8 @@
+-- Your SQL goes here
+CREATE TABLE runs  (
+  id SERIAL PRIMARY KEY,
+  job_id INTEGER NOT NULL,
+  pass BOOLEAN NOT NULL DEFAULT 'f',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  runtime INTEGER NOT NULL DEFAULT 0,
+)
